@@ -4,7 +4,7 @@ from stakeholders.models.client import Client
 class ClientSetializer(serializers.ModelSerializer):
     class Meta:
         model = Client
-        fields = '__all__'
+        fields = ['name']
 
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all()
